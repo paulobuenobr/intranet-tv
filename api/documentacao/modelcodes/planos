@@ -1,0 +1,27 @@
+{
+  "retorno_status":true,
+  "planos":[
+    {
+      "id":"999",
+      "tipo":"Principal",
+      "nome":"Plano A",
+      "taxa_instalacao":"999.00",
+      "mensalidade": {
+        "normal":"99.99",
+        "ate_vencimento":"99.99",
+        "promocao":"99.99"
+      }
+    },
+    {
+      "id":"999",
+      "tipo":"Adicional",
+      "nome":"Ponto Adicional",
+      "taxa_instalacao":"999.00",
+      "mensalidade": {
+        "normal":"99.99",
+        "ate_vencimento":"99.99",
+        "promocao":"99.99"
+      }
+    }	
+  ]
+}

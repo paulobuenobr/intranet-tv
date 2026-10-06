@@ -1,0 +1,22 @@
+{
+  "retorno_status": true,
+  "bloqueios": [
+    {
+      "id": "9999",
+      "tipo_id": "1",
+      "tipo_nome": "Bloqueio por Inadimplência",
+      "inicio": "dd/mm/aaaa hh:mm:ss",
+      "termino": "dd/mm/aaaa hh:mm:ss",
+      "status_nome": "Inativo (Finalizado)"
+    },
+    {
+      "id": "9999",
+      "tipo_id": "2",
+      "tipo_nome": "Suspensão Temporária",
+      "inicio": "dd/mm/aaaa hh:mm:ss",
+      "termino": null,
+      "status_nome": "Ativo"
+    }
+  ]
+}
+

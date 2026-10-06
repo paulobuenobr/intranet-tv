@@ -1,0 +1,74 @@
+<e:RecepcionarLoteRps>
+    <e:EnviarLoteRpsEnvio>
+        <e:LoteRps id="Lote_[loteRps_numeroLote]">
+            <e:NumeroLote>[loteRps_numeroLote]</e:NumeroLote>
+            <e:Cnpj>[loteRps_cnpj]</e:Cnpj>
+            <e:InscricaoMunicipal>[loteRps_inscricaoMunicipal]</e:InscricaoMunicipal>
+            <e:QuantidadeRps>[loteRps_quantidadeRps]</e:QuantidadeRps>
+            
+            <e:ListaRps id="[rps_id]">
+                <e:Rps>
+                    <e:InfRps>
+                        <e:IdentificacaoRps>
+                            <e:Numero>[identificacaoRps_numero]</e:Numero>
+                            <e:Serie>[identificacaoRps_serie]</e:Serie>
+                            <e:Tipo>[identificacaoRps_tipo]</e:Tipo>
+                        </e:IdentificacaoRps>
+                        
+                        <e:DataEmissao>[dataEmissao]</e:DataEmissao>
+                        <e:NaturezaOperacao>[naturezaOperacao]</e:NaturezaOperacao>
+                        <e:RegimeEspecialTributacao>[regimeEspecialTributacao]</e:RegimeEspecialTributacao>
+                        <e:OptanteSimplesNacional>[optanteSimplesNacional]</e:OptanteSimplesNacional>
+                        <e:IncentivadorCultural>[incentivadorCultural]</e:IncentivadorCultural>
+                        <e:Status>[status]</e:Status>
+                        
+                        <e:Servico>
+                            <e:Valores>
+                                <e:ValorServicos>[servico_valorServicos]</e:ValorServicos>
+                                <e:ValorInss>[servico_valorInss]</e:ValorInss>
+                                <e:Aliquota>[servico_aliquota]</e:Aliquota>
+                                <e:IssRetido>[servico_issRetido]</e:IssRetido>
+                                <BaseCalculo>[servico_valorServicos]</BaseCalculo>
+                                <ValorLiquidoNfse>[servico_valorServicos]</ValorLiquidoNfse>
+                            </e:Valores>
+                            <e:ItemListaServico>[servico_itemListaServico]</e:ItemListaServico>
+                            <e:CodigoCnae>[servico_codigoCnae]</e:CodigoCnae>
+                            <e:Discriminacao>[servico_discriminacao]</e:Discriminacao>
+                            <e:CodigoMunicipio>4106902</e:CodigoMunicipio>
+                        </e:Servico>
+                                
+                        <e:Prestador>
+                            <e:Cnpj>[prestador_cnpj]</e:Cnpj>
+                            <e:InscricaoMunicipal>[prestador_inscricaoMunicipal]</e:InscricaoMunicipal>
+                        </e:Prestador>
+
+                        <e:Tomador>
+                            <e:IdentificacaoTomador>
+                                <e:CpfCnpj>
+                                    [tomador_cpf]
+                                    [tomador_cnpj]
+                                </e:CpfCnpj>
+                                <e:InscricaoMunicipal>[tomador_inscricaoMunicipal]</e:InscricaoMunicipal>
+                            </e:IdentificacaoTomador>
+                            <e:RazaoSocial>[tomador_razaoSocial]</e:RazaoSocial>
+                            <e:Endereco>
+                                <e:Endereco>[tomador_end_endereco]</e:Endereco>
+                                <e:Numero>[tomador_end_numero]</e:Numero>
+                                <e:Complemento>[tomador_end_complemento]</e:Complemento>
+                                <e:Bairro>[tomador_end_bairro]</e:Bairro>
+                                <e:CodigoMunicipio>[tomador_end_codigoMunicipio]</e:CodigoMunicipio>
+                                <e:Uf>[tomador_end_uf]</e:Uf>
+                                <e:Cep>[tomador_end_cep]</e:Cep>
+                            </e:Endereco>
+                            <e:Contato>
+                                <e:Telefone>[tomador_telefone]</e:Telefone>
+                                <e:Email>[tomador_email]</e:Email>
+                            </e:Contato>
+                        </e:Tomador>
+                    </e:InfRps>
+                </e:Rps>
+            </e:ListaRps>
+        </e:LoteRps>
+    </e:EnviarLoteRpsEnvio>
+</e:RecepcionarLoteRps>
+    

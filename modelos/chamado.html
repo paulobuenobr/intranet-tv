@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>CHAMADO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <style type="text/css">
+      body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        color: #000000;
+        text-align: justify;
+        padding: 0px;
+      }
+      div.linha {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        height: 1px;
+        border-bottom: 1px solid #000000;
+      }
+      table.margem {
+        border-collapse: collapse;
+        margin: 0px 0px 0px 0px;
+      }
+      td.margem_td {
+        border: 1px solid #000000;
+        padding: 10px;
+        vertical-align: top;
+      }
+      table.quadro {
+        border-collapse: collapse;
+        margin: 0px;
+      }
+      table.quadro td {
+        border: 1px solid #000000;
+        padding: 2px 10px 2px 5px;
+        text-align: justify;
+        vertical-align: top;
+      }
+      td {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        color: #000000;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0px;
+      }
+      table.quadro td.titulo {
+        background: #EEEEEE;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 11px;
+        height: 20px;
+      }
+      .botao, .botao_down {
+        clear: none;
+        float: right;
+        cursor: pointer;
+        background: #DDDDDD;
+        border-right: 1px solid #BBBBBB;
+        border-left: 1px solid #EEEEEE;
+        border-top: 1px solid #EEEEEE;
+        border-bottom: 1px solid #BBBBBB;
+        padding: 2px;
+        width: 16px;
+        height: 16px;
+      }
+      .botao_separador {
+        clear: none;
+        float: right;
+        cursor: pointer;
+        background: #DDDDDD;
+        width: 2px;
+        height: 22px;
+      }
+      .botao_down {
+        background: #CCCCCC;
+        border-right: 1px solid #EEEEEE;
+        border-left: 1px solid #BBBBBB;
+        border-top: 1px solid #BBBBBB;
+        border-bottom: 1px solid #EEEEEE;
+      }
+      @media print {
+        .botao, .botao_separador, .botao_down {
+          display: none;
+        }
+	      table.margem {
+	        margin: 0px;
+	      }
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/rds.js"></script>
+    <script type="text/javascript">
+      var chamados = '[chamados]';
+      var exibir_internos = false;
+      var todos_comentarios = false;
+      var exibir_vazios = [exibir_vazios_status];
+      function exibirInternos(botao) {
+        botao.className = exibir_internos ? 'botao' : 'botao_down';
+        exibir_internos = !exibir_internos;
+        // RDS
+    	  url = "rds.js.php?m=chamados&a=busca_etapas_impressao&chamados=" + chamados + "&exibir_internos=" + (exibir_internos ? 1 : 0) + "&exibir_vazios=" + (exibir_vazios ? 1 : 0);
+        RDSCarregar("chamados_remove_etapa", url);
+      }
+      function exibirVazios(botao) {
+        botao.className = exibir_vazios ? 'botao' : 'botao_down';
+        exibir_vazios = !exibir_vazios;
+        // RDS
+    	  url = "rds.js.php?m=chamados&a=busca_etapas_impressao&chamados=" + chamados + "&exibir_internos=" + (exibir_internos ? 1 : 0) + "&exibir_vazios=" + (exibir_vazios ? 1 : 0);
+        RDSCarregar("chamados_remove_etapa", url);
+      }
+      function exibirTodosComentarios(botao) {
+        todos_comentarios = !todos_comentarios;
+        botao.className = todos_comentarios ? 'botao_down' : 'botao';
+		if (todos_comentarios) {
+			document.getElementById('chamados_etapas').style.height = "auto";
+		} else {
+			document.getElementById('chamados_etapas').style.height = etapas_altura;
+		}
+      }
+    </script>
+    <div id="rds" style="display:none"></div>
+    <!-- <div class="botao" onclick="exibirInternos(this)"><img src="imagens/caixa_texto.png" alt="Exibir Comentários Internos" title="Exibir Comentários Internos" width="16" height="16" border="0"></div> -->
+    <div class="botao[exibir_vazios]" onclick="exibirTodosComentarios(this)"><img src="imagens/caixa_texto_vazio.png" alt="Exibir todos os comentários" title="Exibir todos os comentários" width="16" height="16" border="0"></div>
+    <div class="botao_separador"></div>
+    <div class="botao" onclick="print()"><img src="imagens/imprimir.png" alt="Imprimir" title="Imprimir" width="16" height="16" border="0"></div>
+
+[conteudo]
+
+  </body>
+</html>

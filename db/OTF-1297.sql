@@ -1,0 +1,1 @@
+ALTER TABLE tab_clientes_origens ADD COLUMN clo_cobranca_carteira INT(1) NULL DEFAULT 0 AFTER clo_erp;

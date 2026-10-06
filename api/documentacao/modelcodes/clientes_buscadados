@@ -1,0 +1,61 @@
+{
+  "retorno_status": true,
+  "dados": {
+    "id": "999999",
+    "nome": "Cliente A",
+    "tipo_pessoa": "Pessoa Física",
+    "nome_fantasia": null,
+    "cpf_cnpj": "999.999.999-99",
+    "inscricao_estadual": null,
+    "data_nascimento": "dd/mm/aaaa",
+    "endereco": {
+      "logradouro": "Rua A",
+      "bairro": "Centro",
+      "cidade": "Cidade",
+      "estado_sigla": "UF",
+      "numero": "999",
+      "complemento": {
+        "tipo": "",
+        "valor": ""
+      },
+      "ponto_referencia": "Próximo Rua B",
+      "cep": "99999-999"
+    },
+    "contato": "Contato A",
+    "telefones": [
+      {
+        "ddd": "99",
+        "numero": "99999-9999",
+        "ramal": "",
+        "tipo": "Celular"
+      },
+      {
+        "ddd": "99",
+        "numero": "99999-9999",
+        "ramal": "",
+        "tipo": "Celular"
+      }
+    ],
+    "emails": [
+      {
+        "email": "email@dominio.com.br",
+        "tipo": "Contato/News"
+      }
+    ],
+    "dia_vencimento": "99",
+    "endereco_cobranca": {
+      "logradouro": "Rua A",
+      "bairro": "Centro",
+      "cidade": "Cidade",
+      "estado_sigla": "UF",
+      "numero": "999",
+      "complemento": {
+        "tipo": "",
+        "valor": ""
+      },
+      "ponto_referencia": "Próximo Rua B",
+      "cep": "99999-999"
+    },
+    "status": "Ativo"
+  }
+}

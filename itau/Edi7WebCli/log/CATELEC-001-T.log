@@ -1,0 +1,30 @@
+[2015-05-27 14:54:23,400] INFO - Executando WebCli Versao 1.4.6 - CATELEC-T-001
+[2015-05-27 14:54:23,402] INFO - EDI7WebCli: INICIO.
+[2015-05-27 14:54:23,407] INFO - == Iniciando...
+[2015-05-27 14:54:23,408] INFO - init() ok
+[2015-05-27 14:54:25,542] INFO - login info: [7fa407ee91f5ed4284d03fb5ee5c1b48].
+[2015-05-27 14:54:25,542] INFO - Login OK.
+[2015-05-27 14:54:25,542] INFO - == Iniciando a transmissao...
+[2015-05-27 14:54:25,543] INFO - Retorno de getUploadList: 0
+[2015-05-27 14:54:25,543] INFO - == Iniciando a recepcao...
+[2015-05-27 14:54:26,081] INFO - Retorno de getDownloadList: 0
+[2015-05-27 14:54:26,081] INFO - Nao existem arquivos a receber.
+[2015-05-27 14:54:26,081] INFO - Vai para logoff...
+[2015-05-27 14:54:26,565] INFO - logout() ok.
+[2015-05-27 14:54:26,565] INFO - Executou WebCli - CATELEC-T-001
+[2015-05-27 14:54:26,565] INFO - Run: Modo Persistente: false.
+[2015-05-27 14:54:38,972] INFO - Executando WebCli Versao 1.4.6 - CATELEC-T-001
+[2015-05-27 14:54:38,974] INFO - EDI7WebCli: INICIO.
+[2015-05-27 14:54:38,979] INFO - == Iniciando...
+[2015-05-27 14:54:38,979] INFO - init() ok
+[2015-05-27 14:54:44,195] INFO - login info: [208ccaccdc439eaad4f01f956aecbbd9].
+[2015-05-27 14:54:44,195] INFO - Login OK.
+[2015-05-27 14:54:44,196] INFO - == Iniciando a transmissao...
+[2015-05-27 14:54:44,197] INFO - Retorno de getUploadList: 0
+[2015-05-27 14:54:44,197] INFO - == Iniciando a recepcao...
+[2015-05-27 14:54:44,680] INFO - Retorno de getDownloadList: 0
+[2015-05-27 14:54:44,680] INFO - Nao existem arquivos a receber.
+[2015-05-27 14:54:44,680] INFO - Vai para logoff...
+[2015-05-27 14:54:44,958] INFO - logout() ok.
+[2015-05-27 14:54:44,958] INFO - Executou WebCli - CATELEC-T-001
+[2015-05-27 14:54:44,958] INFO - Run: Modo Persistente: false.

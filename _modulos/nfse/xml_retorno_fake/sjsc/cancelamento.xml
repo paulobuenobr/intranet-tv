@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nfse>
+  <nf>
+    <numero>20190013</numero>
+    <situacao>C</situacao>
+    <observacao>Cancelando uma NFS-e</observacao>
+  </nf>
+  <prestador>
+    <cpfcnpj>11252365444435</cpfcnpj>
+    <cidade>8291</cidade>
+  </prestador>
+</nfse>

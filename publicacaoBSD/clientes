@@ -1,0 +1,40 @@
+#!/bin/sh
+
+###############################
+###  DELETA REGRAS ANTIGAS  ###
+###############################
+
+/sbin/ipfw delete 44000
+/sbin/ipfw delete set 10
+
+###############################
+### CLIENTES X VELOCIDADES  ###
+###############################
+
+### Mila Restaurante LTDA ME
+/sbin/ipfw -q add 10001 set 10 skipto 45601 ip from any to any MAC 00:02:10:00:23:87 any out via vlan30
+/sbin/ipfw -q add 10001 set 10 skipto 45300 ip from any to any MAC any 00:02:10:00:23:87 in via vlan30
+/sbin/ipfw -q add 60500 set 10 skipto 62000 all from any to any MAC any 00:02:10:00:23:87 in via vlan30
+/sbin/ipfw -q add 60500 set 10 skipto 62000 all from any to any MAC 00:02:10:00:23:87 any out via vlan30
+
+### Renato Jose Ferreira (Aroldo de Carvalho, 401)
+/sbin/ipfw -q add 10002 set 10 skipto 46025 ip from any to any MAC 00:0a:e6:eb:cd:36 any out via vlan10
+/sbin/ipfw -q add 10002 set 10 skipto 45300 ip from any to any MAC any 00:0a:e6:eb:cd:36 in via vlan10
+
+### Jucelio Raul Duarte (Alpha Centaury, 811)
+/sbin/ipfw -q add 10003 set 10 skipto 45301 ip from any to any MAC 00:02:44:40:49:cb any out via vlan20
+/sbin/ipfw -q add 10003 set 10 skipto 45150 ip from any to any MAC any 00:02:44:40:49:cb in via vlan20
+
+### [Bloqueado] Orlando de Oliveira Reis (Aroldo de Carvalho, 1101)
+### /sbin/ipfw -q add 10004 set 10 skipto 47049 ip from any to any MAC 00:1a:4d:a2:b0:07 any out via vlan20
+### /sbin/ipfw -q add 10004 set 10 skipto 45300 ip from any to any MAC any 00:1a:4d:a2:b0:07 in via vlan20
+
+###############################
+###  BLOQUEIA DEMAIS MAC'S  ###
+###############################
+
+/sbin/ipfw -q add 44000 deny all from any to any MAC any any in via vlan10
+/sbin/ipfw -q add 44000 deny all from any to any MAC any any in via vlan20
+/sbin/ipfw -q add 44000 deny all from any to any MAC any any in via vlan30
+
+### FIM

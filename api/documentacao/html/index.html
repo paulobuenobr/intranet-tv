@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+<title>Documentação API - IPTV Olé</title>
+</head>
+
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+
+
+
+
+
+<style type="text/css">
+
+pre {
+    background-color: #d8d8d8;
+	font-style:italic;
+	font-size: 12px;
+	padding-left: 15px;
+}
+.pre { max-height: 300px; }
+.tituloparametro { border-bottom: 2px solid #ccc; margin-top: 30px; font-style: italic; }
+@media print {
+	.no-print { display: none !important; }
+}
+</style>
+
+
+
+<body>
+
+<div class="row">
+	<div class="col-4 col-md-3 col-lg-3 col-xl-2"><img src="../../imagens/logo_ole_tv.png" width="200"></div>
+	<div class="col-8 col-md-9 col-lg-9 col-xl-10">
+		<h1>Documentação API - IPTV Olé <sup><span class="badge badge-secondary">v1.1</span></sup></h1>
+		<p class="blockquote-footer">Atualizado em {data_atualizacao}</p>
+	</div>
+</div>
+
+<hr />
+<h3>Introdução</h3>
+<p>Seja bem-vindo a documentação da API de comunicação com nosso sistema de gerenciamento da IPTV da Olé!<br />
+  Nossa API foi criada utilizando o padrão REST que possibilita a   integração de seu sistema ao nosso, sendo assim você também pode   extender ou recriar as funcionalidades existentes na nossa plataforma,   tudo isso consumindo a API que está documentada abaixo.</p>
+  
+
+<h3>Histórico de Atualizaçoes</h3>
+<ul style="font-size: 0.9rem;">
+	{historico}
+</ul>  
+  
+  
+  
+<h2>Como usar a API?</h2>
+<p>Logo a seguir você encontrará todos os recursos e metódos suportados   pela API, sendo que essa página possibilita que você teste os recursos e   métodos diretamente através dela.</p>
+<h2>Autenticação</h2>
+<p>Para qualquer requisição de nossa API, você precisa informar, através do método POST, os dados de autenticação, que são:</p>
+<ul>
+  <li>keyapi: <strong>string</strong> (<em>contendo a chave de acesso pra validar o acesso</em>).</li>
+  <li>login: <strong>string</strong> (<em>login do usuário</em>)</li>
+  <li>pass: <strong>string</strong> (<em>senha do usuário</em>),</li>
+</ul>
+<p>Caso os dados de autenticação contenha algum erro, receberá como retorno, o seguinte JSON:</p>
+  <pre>
+{    
+  "retorno_status":false,
+  "error":"Dados de autenticação são inválidos!"
+}
+</pre>
+<p>Em todas as requisições, no caso de algum erro, sempre retorna o parâmetro &quot;retorno_status&quot; como &quot;false&quot;, e &quot;error&quot; com a descrição  do erro. Em caso de sucesso, retorna &quot;retorno_status&quot; =  &quot;true&quot; com os demais dados de cada tipo de requisição.</p>
+<p>Conheça abaixo, todas as funções disponíveis em nossa API:</p>
+
+<p class="no-print">
+	<button type="button" id="btnToggleAccordions" class="btn btn-primary btn-sm" onclick="toggleTodosAccordions()">Abrir todos</button>
+</p>
+
+{categorias}
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="jquery-3.5.1.js" type="text/javascript"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<script src="popper.min.js" type="text/javascript"></script>
+
+<script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="funcoes.js.php"></script>
+
+</body>
+</html>

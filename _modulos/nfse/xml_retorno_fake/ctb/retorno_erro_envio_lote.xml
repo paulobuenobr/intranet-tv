@@ -1,0 +1,30 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <ConsultarLoteRpsResponse xmlns="https://www.e-governeapps2.com.br/">
+         <ConsultarLoteRpsResult>
+            <ListaMensagemRetorno>
+               <MensagemRetorno>
+                  <Codigo>E36</Codigo>
+                  <Mensagem>Campo ISSRetido inválido. - POSIÇÃO RPS - 1</Mensagem>
+                  <Correcao>Utilize um dos tipos: 1 para ISS Retido ou 2 para ISS não Retido.</Correcao>
+               </MensagemRetorno>
+               <MensagemRetorno>
+                  <Codigo>E539</Codigo>
+                  <Mensagem>Para contribuintes enquadrados no Simples Nacional as alíquotas permitidas são  entre 2,00% e 5,00%.. - POSIÇÃO RPS - 1</Mensagem>
+                  <Correcao>Informe uma alíquota válida para Simples Nacional e re-transmita o lote de RPS.</Correcao>
+               </MensagemRetorno>
+               <MensagemRetorno>
+                  <Codigo>E503</Codigo>
+                  <Mensagem>Valor de alíquota inválido. - POSIÇÃO RPS - 1</Mensagem>
+                  <Correcao>O valor da alíquota de serviço deve estar entre 2% e 5%. Ex: A alíquota de 5% deve ser enviada como 0.05 conforme Manual de Integração.</Correcao>
+               </MensagemRetorno>
+               <MensagemRetorno>
+                  <Codigo>E127</Codigo>
+                  <Mensagem>Campo telefone do tomador informado incorretamente. - POSIÇÃO RPS - 1</Mensagem>
+                  <Correcao>O campo telefone do tomador deverá ter tamanho máximo de 11 caracteres.</Correcao>
+               </MensagemRetorno>
+            </ListaMensagemRetorno>
+         </ConsultarLoteRpsResult>
+      </ConsultarLoteRpsResponse>
+   </soap:Body>
+</soap:Envelope>

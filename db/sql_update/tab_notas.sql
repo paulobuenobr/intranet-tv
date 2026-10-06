@@ -1,0 +1,73 @@
+CREATE TABLE tab_notas (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  numero int(10) DEFAULT NULL,
+  codigoVerificacao varchar(45) DEFAULT NULL,
+  dataEmissao datetime DEFAULT NULL,
+  loteRps_numeroLote int(20) DEFAULT NULL,
+  identificacaoRps_numero int(10) DEFAULT NULL,
+  identificacaoRps_serie varchar(45) DEFAULT NULL,
+  identificacaoRps_tipo int(2) DEFAULT NULL,
+  dataEmissaoRps varchar(45) DEFAULT NULL,
+  naturezaOperacao int(4) DEFAULT NULL,
+  regimeEspecialTributacao int(2) DEFAULT NULL,
+  optanteSimplesNacional int(2) DEFAULT NULL,
+  incentivadorCultural int(2) DEFAULT NULL,
+  nfseSubstituida int(2) DEFAULT NULL,
+  servico_valores_valorServicos varchar(45) DEFAULT NULL,
+  servico_valores_valorDeducoes varchar(45) DEFAULT NULL,
+  servico_valores_valorPis varchar(45) DEFAULT NULL,
+  servico_valores_valorCofins varchar(45) DEFAULT NULL,
+  servico_valores_valorInss varchar(45) DEFAULT NULL,
+  servico_valores_valorIr varchar(45) DEFAULT NULL,
+  servico_valores_valorCsll varchar(45) DEFAULT NULL,
+  servico_valores_valorIss varchar(45) DEFAULT NULL,
+  servico_valores_valorIssRetido varchar(45) DEFAULT NULL,
+  servico_valores_outrasRetencoes varchar(45) DEFAULT NULL,
+  servico_valores_baseCalculo varchar(45) DEFAULT NULL,
+  servico_valores_aliquota varchar(45) DEFAULT NULL,
+  servico_valores_issRetido int(2) DEFAULT NULL,
+  servico_valores_valorLiquidoNfse varchar(45) DEFAULT NULL,
+  servico_valores_descontoIncondicionado varchar(45) DEFAULT NULL,
+  servico_valores_descontoCondicionado varchar(45) DEFAULT NULL,
+  servico_valores_numeroDeducao varchar(45) DEFAULT NULL,
+  servico_itemListaServico varchar(45) DEFAULT NULL,
+  servico_codigoCnae varchar(45) DEFAULT NULL,
+  servico_codigoTributacaoMunicipio varchar(45) DEFAULT NULL,
+  servico_codigoMunicipio varchar(45) DEFAULT NULL,
+  valorCredito varchar(45) DEFAULT NULL,
+  tomserv_idetom_cpfCnpj_cnpj varchar(45) DEFAULT NULL,
+  tomserv_idetom_cpfCnpj_cpf varchar(45) DEFAULT NULL,
+  tomserv_inscricaoMunicipal varchar(255) DEFAULT NULL,
+  tomserv_razaoSocial varchar(255) DEFAULT NULL,
+  tomserv_end_endereco varchar(250) DEFAULT NULL,
+  tomserv_end_numero varchar(45) DEFAULT NULL,
+  tomserv_end_bairro varchar(45) DEFAULT NULL,
+  tomserv_end_uf varchar(4) DEFAULT NULL,
+  tomserv_end_complemento varchar(255) DEFAULT NULL,
+  servico_discriminacao longtext DEFAULT NULL,
+  tomserv_end_cep int(12) DEFAULT NULL,
+  tomserv_end_codigoMunicipio int(10) DEFAULT NULL,
+  tomserv_contato_telefone varchar(45) DEFAULT NULL,
+  tomserv_contato_email varchar(150) DEFAULT NULL,
+  protocolo varchar(45) DEFAULT NULL,
+  link_nfse varchar(1000) DEFAULT NULL,
+  serie_nfse varchar(45) DEFAULT NULL,
+  data_nfse varchar(45) DEFAULT NULL,
+  nota_gerada int(1) UNSIGNED NOT NULL DEFAULT 0,
+  coa_id mediumint(8) UNSIGNED NOT NULL DEFAULT 0,
+  status_id int(2) NOT NULL DEFAULT 2,
+  plano_id mediumint(20) DEFAULT NULL,
+  afc_id mediumint(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE tab_notas
+  ADD KEY IX_tab_notas_coa_id (coa_id),
+  ADD KEY IX_tab_notas_status_id (status_id);
+
+ALTER TABLE tab_notas
+  MODIFY id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10000;
+
+ALTER TABLE tab_notas
+  ADD CONSTRAINT tab_notas_coa_id FOREIGN KEY (coa_id) REFERENCES tab_cobrancas (coa_id),
+  ADD CONSTRAINT tab_notas_status_id FOREIGN KEY (status_id) REFERENCES tab_notas_status (id);
+COMMIT;

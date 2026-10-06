@@ -1,0 +1,70 @@
+#!/bin/sh
+
+/sbin/ipfw -q add 100 skipto 65530 all from me to any MAC any any out via vr0
+/sbin/ipfw -q add 100 skipto 65530 all from any to me MAC any any in via vr0
+
+###############################
+###    BLOQUEIO DE VIRUS    ###
+###############################
+
+/sbin/ipfw -q add 400 deny tcp from any to any dst-port 135-139,445,593,1024-1030,1080,1363,1364,1368,1377,2745,2283,2535,2745,3127,3128,3410,4444,5554,27374,8866,9898,10080,12345,17300,65506 in
+/sbin/ipfw -q add 400 deny udp from any to any dst-port 135-139,445,4444 in
+
+###############################
+###  VELOCIDADES (UPLOAD)   ###
+###############################
+
+### 150 Kbps
+/sbin/ipfw pipe 150 config mask src-ip 0x00ffffff bw 150Kbit/s
+/sbin/ipfw -q add 45150 pipe 150 ip from any to any MAC any any in
+/sbin/ipfw -q add 45155 skipto 59000 all from any to any MAC any any in
+
+### 300 Kbps
+/sbin/ipfw pipe 300 config mask src-ip 0x00ffffff bw 300Kbit/s
+/sbin/ipfw -q add 45300 pipe 300 ip from any to any MAC any any in
+/sbin/ipfw -q add 45305 skipto 59000 all from any to any MAC any any in
+
+###############################
+###  VELOCIDADES (DOWNLOAD) ###
+###############################
+
+### 300 Kbps
+/sbin/ipfw pipe 301 config mask dst-ip 0x00ffffff bw 300Kbit/s
+/sbin/ipfw -q add 45301 pipe 301 ip from any to any MAC any any out
+/sbin/ipfw -q add 45305 skipto 59000 all from any to any MAC any any out
+
+### 600 Kbps
+/sbin/ipfw pipe 601 config mask dst-ip 0x00ffffff bw 600Kbit/s
+/sbin/ipfw -q add 45601 pipe 601 ip from any to any MAC any any out
+/sbin/ipfw -q add 45605 skipto 59000 all from any to any MAC any any out
+
+### 1024 Kbps
+/sbin/ipfw pipe 1025 config mask dst-ip 0x00ffffff bw 1024Kbit/s
+/sbin/ipfw -q add 46025 pipe 1025 ip from any to any MAC any any out
+/sbin/ipfw -q add 46029 skipto 59000 all from any to any MAC any any out
+
+### 2048 Kbps
+/sbin/ipfw pipe 2049 config mask dst-ip 0x00ffffff bw 2048Kbit/s
+/sbin/ipfw -q add 47049 pipe 2049 ip from any to any MAC any any out
+/sbin/ipfw -q add 47053 skipto 59000 all from any to any MAC any any out
+
+###############################
+###           NAT           ###
+###############################
+
+/sbin/ipfw -q add 60000 divert 8668 ip from any to any via vr0
+
+###############################
+###   LIMITE DE CONEXOES    ###
+###############################
+
+/sbin/ipfw -q add 61000 allow ip from any to any MAC any any in limit src-addr 40
+/sbin/ipfw -q add 61000 allow ip from any to any MAC any any out limit dst-addr 40
+
+###############################
+### EXECUTA REGRAS CLIENTES ###
+###############################
+
+sh ./clientes
+
+### FIM

@@ -1,0 +1,44 @@
+<script type="text/javascript" src="rds.js.php?m=faturas_lotes"></script>
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+  <tr>
+    <td>[acoes]</td>
+  </tr>
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="1" cellpadding="3">
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td width="20%"><strong>&nbsp;Ciclo:</strong></td>
+          <td>[ciclo]</td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td colspan="2" height="28"><strong>&nbsp;Dados</strong></td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td width="20%"><strong>&nbsp;&raquo; Clientes:</strong></td>
+          <td>[clientes]</td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td width="20%"><strong>&nbsp;&raquo; Faturas:</strong></td>
+          <td>[faturas]</td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td width="20%"><strong>&nbsp;&raquo; Total:</strong></td>
+          <td>[total]</td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td width="20%"><strong>&nbsp;&raquo; ICMS:</strong></td>
+          <td>[total_icms]</td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td colspan="2" height="28"><strong>&nbsp;Faturas</strong></td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td colspan="2">[faturas_listagem]</td>
+        </tr>
+        <tr bgcolor="#E8E8E8" class="txtAzulEscuro11">
+          <td height="40" colspan="2" align="center">[botoes]</td>
+        </tr>
+      </table>
+    </td>
+</tr>
+</table>

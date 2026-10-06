@@ -1,0 +1,73 @@
+{
+  "retorno_status": true,
+  "contratos": [
+    {
+      "id": "9999",
+      "codigo": "Código do contrato",
+      "tipo": "Principal",
+      "servico": "Olé TV",
+      "data_geracao": "dd/mm/aaaa",
+      "data_ativacao": "dd/mm/aaaa",
+      "data_anulacao": "dd/mm/aaaa",
+      "data_cancelamento": "dd/mm/aaaa",
+      "status": "Ativo (Sem Pendências)",
+      "assinaturas": [
+        {
+          "id": "9999",
+          "plano": "Plano A",
+          "box": "9",
+          "dispositivos": "9",
+          "status_assinatura": "Ativo",
+          "equipamentos": [
+            {
+              "id": "9999",
+              "equipamento": "Nome Equipamento",
+              "equipamento_modelo": "Modelo do Equipamento",
+              "mac": "MAC do Equipamento",
+              "data_inicio": "dd/mm/aaaa",
+              "data_termino": "dd/mm/aaaa",
+              "status_equipamento": "Ativo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9999",
+      "codigo": "Código do contrato",
+      "tipo": "Principal",
+      "servico": "Olé TV",
+      "data_geracao": "dd/mm/aaaa",
+      "data_ativacao": "dd/mm/aaaa",
+      "data_anulacao": "dd/mm/aaaa",
+      "data_cancelamento": "dd/mm/aaaa",
+      "status": "Inativo (Cancelado)",
+      "assinaturas": [
+        {
+          "id": "9999",
+          "plano": "Plano B",
+          "box": "9",
+          "dispositivos": "99",
+          "status_assinatura": "Cancelado",
+          "equipamentos": [
+            {
+              "id": "9999",
+              "equipamento": "Nome Equipamento",
+              "equipamento_modelo": "Modelo do Equipamento",
+              "mac": "MAC do Equipamento",
+              "data_inicio": "dd/mm/aaaa",
+              "data_termino": "dd/mm/aaaa",
+              "status_equipamento": "Aguardando Retirada"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+ 
+
+ 
+
+ 

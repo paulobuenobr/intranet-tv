@@ -1,0 +1,55 @@
+{
+    "name": "carlosschmitt/sicredi-api",
+    "description": "A PHP SDK for the Sicredi API",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "sicredi",
+        "sdk",
+        "api",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Bruno Pansani",
+            "email": "bruno@pansani.dev"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.28",
+        "fakerphp/faker": "^1.21",
+        "phpunit/phpunit": "^9.6.7",
+        "vlucas/phpdotenv": "^5.5",
+        "yoast/phpunit-polyfills": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SicrediAPI\\": "src/SicrediAPI"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "platform": {
+            "php": "7.4.33"
+        }
+    },
+    "scripts": {
+        "cs-dry-run": [
+            "@cs-setup",
+            ".build/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --verbose --diff --dry-run"
+        ],
+        "cs-fix": [
+            "@cs-setup",
+            ".build/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --verbose --diff"
+        ],
+        "cs-setup": [
+            "mkdir -p .build/php-cs-fixer",
+            "composer require --dev --working-dir=.build/php-cs-fixer friendsofphp/php-cs-fixer"
+        ]
+    }
+}

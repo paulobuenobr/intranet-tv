@@ -1,0 +1,9 @@
+<e:CancelarLoteRps>
+    <e:CancelarLoteRpsEnvio>
+        <e:LoteRps>
+            <e:Protocolo>[protocolo]</e:Protocolo>
+            <e:Cnpj>[cnpj]</e:Cnpj>
+            <e:InscricaoMunicipal>[inscricaoMunicipal]</e:InscricaoMunicipal>
+        </e:LoteRps>
+    </e:CancelarLoteRpsEnvio>
+</e:CancelarLoteRps>

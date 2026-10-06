@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nfse>
+    [nfse_teste]
+    <nf>
+        <numero>[nf_numero]</numero>
+        <situacao>C</situacao>
+        <serie_nfse>[serie_nfse]</serie_nfse>
+        <observacao>[nf_observacao]</observacao>
+    </nf>
+    <prestador>
+        <cpfcnpj>[prestador_cpfcnpj]</cpfcnpj>
+        <cidade>[prestador_cidade]</cidade>
+    </prestador>
+</nfse>

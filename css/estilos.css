@@ -1,0 +1,237 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.atree, atree:link, atree:visited, atree:active, atree:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	text-decoration: none;
+}
+.txtBranco11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.txtAzulEscuro11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+}
+.linkAzulEscuro11, .linkAzulEscuro11:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	text-decoration: none;
+}
+.buttonBrancoAzulEscuro11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	background-color: #FFFFFF;
+	padding: 1px;
+	border: 1px solid #505050;
+	font-weight: bold;
+	cursor: pointer;
+}
+.buttonAzulEscuroBranco11 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #FFFFFF;
+  background-color: #505050;
+  padding: 1px;
+  border: 1px solid #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttonAzulEscuroBranco11Disabled, .buttonAzulEscuroBranco11[disabled] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  background-color: #E8E8E8;
+  padding: 1px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  cursor: default;
+}
+.textBrancoAzulEscuro11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 3px;
+	padding-left:  3px;
+	border: 1px solid #505050;
+}
+.inputBrancoAzulEscuro11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 3px;
+	padding-left: 3px;
+	border: 1px solid #505050;
+	height: 20px;
+}
+input[type="checkbox"].inputBrancoAzulEscuro11 {
+	padding: 2px 3px 3px 2px;
+	border: none;
+	height: auto;
+}
+select.inputBrancoAzulEscuro11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	background-color: #FFFFFF;
+	padding: 1px;
+	border: 1px solid #505050;
+	height: 20px;
+}
+.inputBrancoAzulEscuro11_r {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 3px;
+	padding-left:  3px;
+	border: 1px solid #505050;
+  text-align: right;
+	height: 20px;
+}
+.inputBrancoAzulEscuro11_c {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #505050;
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 3px;
+	padding-left:  3px;
+	border: 1px solid #505050;
+  text-align: center;
+	height: 20px;
+}
+a:link {
+	text-decoration: none
+}
+a:visited {
+	text-decoration: none
+}
+a:hover {
+	text-decoration: underline
+}
+form {
+  margin: 0px;
+}
+.txtAzulEscuro10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #505050;
+}
+.txtBranco10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.txtBranco14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.txtBranco20 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.menuTabela {
+	background: #FFFFFF;
+	border: 1px none #252525;
+}
+.menuCelula {
+	background: #252525;
+}
+.chamadoDestaque {
+  border-left:1px solid #505050;
+  padding-left:10px;
+  margin-left:10px;
+  margin-top:10px;
+  margin-bottom:10px
+}
+.destaque {
+  border: 1px solid #505050;
+  background-color: #DEE8F4;
+  padding: 3px 4px;
+  margin: 2px;
+}
+.orientacao {
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #FFFFE1;
+  padding: 3px 4px;
+  margin: 2px;
+}
+.linkDiscar, .linkDiscar:link, .linkDiscar:visited, .linkDiscar:hover, .linkDiscar:active {
+  padding: 0px 8px 0px 2px;
+  background: rgba(200, 200, 200, 0.5) url('../imagens/phone_icon.png') no-repeat right center;
+  text-decoration: none;
+	color: #232323;
+}
+.linkBranco, .linkBranco:link, .linkBranco:visited, .linkBranco:hover, .linkBranco:active {
+	color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.lacunaVisita {
+	border-radius: 2px;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #999999;
+	border-bottom-width: 2px;
+	background-color: #EEEEEE;
+}
+
+.lacunaVisita.agendado {
+	border: 1px solid #3C7751;
+	background-color: #70e098;
+}
+
+.lacunaVisita.agendado.garopaba {
+	border: 1px solid #AC4792;
+	background-color: #FF69B4;
+}
+
+.lacunaVisita.finalizado {
+	border: 1px solid #2F4F4F ;
+	background-color: #708090;
+}
+
+.lacunaVisita.finalizado.garopaba {
+	border: 1px solid #912C77 ;
+	background-color: #CC3681;
+}
+
+.lacunaVisita.residencial {
+	border-bottom: 2px solid #880000 !important;
+}
+
+.lacunaVisita.condominial {
+	border-bottom: 2px solid #000088 !important;
+}
+
+.lacunaVisita.ativa {
+	border: 1px solid #D2691E;
+	background-color: #FFA500;
+}
+
+.lacunaVisita.inativa:not(.agendado):not(.finalizado) {
+	border-bottom: 2px solid #999999 !important;
+}

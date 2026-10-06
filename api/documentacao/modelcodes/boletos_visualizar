@@ -1,0 +1,5 @@
+{
+  "retorno_status": true,
+  "formato": "application/pdf",
+  "conteudo": "Conteudo Base 64"
+}

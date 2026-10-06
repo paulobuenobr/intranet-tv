@@ -1,0 +1,100 @@
+<form method="post" action="index.php" enctype="multipart/form-data">
+<div class="card">
+	<div class="card-header bg-success text-white"><b>Selecione seu arquivo CSV</b></div>
+	<div class="card-body">
+		
+			<input name="sendFile" value="1" type="hidden"/>
+			<div class="row">
+				<div class="col-12 col-sm-2 p-1">Keyapi:</div>
+				<div class="col-12 col-sm-10 p-1"><input type="text" class="form-control form-control-sm" id="keyapi" name="keyapi" value="{keyapi}" placeholder="Chave da API" autocomplete="off"></div>
+				<div class="col-12 col-sm-2 p-1">Login:</div>
+				<div class="col-12 col-sm-10 p-1"><input type="text" class="form-control form-control-sm" id="login" name="login" value="{loginapi}" placeholder="Login" autocomplete="off"></div>
+				<div class="col-12 col-sm-2 p-1">Senha:</div>
+				<div class="col-12 col-sm-10 p-1"><input type="text" class="form-control form-control-sm" id="pass" name="pass" value="{passapi}" placeholder="Senha" autocomplete="off"></div>			
+			</div>
+			<div class="row">
+				<div class="col-2 p-1">Arquivo:</div>
+				<div class="col p-1"><input type="file" id="fileImport" name="fileImport" accept=".csv"></input></div>
+				<div class="col-auto p-1"></div>
+			</div>
+			
+			<div id="showSend" class="d-none w-100 h-100"></div>
+		
+	</div>
+	<div class="card-footer small pt-0 pb-0">
+		<div class="row">
+			<div class="col-12 col-sm p-1">
+				No envio, o arquivo será analisado, se houver erros na estrutura ou dados inválidos, será ilustrado no resultado da análise!</br>
+				Após aprovado na análise, o arquivo poderá ser importado.<br>
+				O contratos gerados a partir do arquivo, será para o plano <b>"Life Line (729)"</b>.
+			</div>
+			<div class="col-12 col-sm-auto p-1 text-right">
+				<button id="sendForm" class="btn btn-success">Efetuar Análise</button>
+			</div>	 
+		</div>
+	</div>
+</div>
+
+</form>
+
+<div>&nbsp;</div>
+<div class="card">
+	<div class="card-header bg-secondary text-white"><b>Especificações para o arquivo</b></div>
+	<div class="card-body">
+	
+		<h6><b>Detalhes do arquivo</b></h6>
+		<ul>
+			<li>Tipo: CSV</li>
+			<li>Delimitador: ponto e vírgula (";")</li>
+			<li>Codificação de caracteres: UTF-8</li>
+			<li>1ª linha, os titulos da coluna, será ignorado na insersão no sistema</li>
+			<li>Demais linhas, dados que serão inserido no sistema</li>
+			<li><a href="exemplo_importacao.csv">Clique aqui e veja um exemplo do arquivo CSV</a></li>
+		
+		</ul>
+		
+		<p>&nbsp;</p>
+		<h6><b>Especificações da ordem e formantação dos dados</b></h6>
+		<ul>
+			<li>Nome/Razão social - <i>Obrigatório</i> - String: Nome da Pessoa Fisica ou Júridica</li>
+			<li>CNPJ / CPF - <i>Obrigatório</i> - String: CPF da pessoa Física (999.999.999-99) ou CNPJ da pessoa juridica (99.999.9999/9999-99) </li>
+			<li>Data Nascimento - <i>Obrigatório p/ Pessoa Fisica</i> - String: Data de nascimento (dd/mm/AAAA)</li>
+			<li>Endereço - <i>Obrigatório</i> - String</li>
+			<li>Complemento - <i>Opcional</i> - String</li>
+			<li>Número - <i>Opcional</i> - String</li>
+			<li>Bairro - <i>Obrigatório</i> - String</li>
+			<li>UF - <i>Obrigatório</i> - String (Sigla ex: SC)</li>
+			<li>Cidade - <i>Obrigatório</i> - String</li>
+			<li>Cep - <i>Obrigatório</i> - String: CEP da localidade, será válido (99999-999)</li>
+			<li>Telefone 1 - <i>Opcional</i> - String: Se conter, deve estar formatado com DDD (99) 9999-9999 ou (99) 99999-9999</li>
+			<li>Telefone 2 - <i>Opcional</i> - String: Se conter, deve estar formatado com DDD (99) 9999-9999 ou (99) 99999-9999</li>
+			<li>E-mail - <i>Obrigatório</i> - String: Será válidado e não poderá ter repetidos, será nesse e-mail que o cliente vai receber os dados pra configurar senha.</li>
+		</ul>
+		
+		
+		<p>&nbsp;</p>
+		<h6><b>Possíveis erros que podem ser detectados</b></h6>
+		<ul>
+			<li>Razão Social/Nome é inválido - <i>Nome não identificável como nome de uma pessoa (fisica ou juridica)</i></li>
+			<li>CPF inválido - <i>Número identificado como CPF, porém inválido</i></li>
+			<li>CNPJ inválido - <i>Número identificado como CNPJ, porém inválido</i></li>
+			<li>CPF/CNPJ não identificado - <i>Campo vazio ou dados não identificados</i></li>
+			<li>Data de Nascimento não informada ou inválida - <i>Quando detectado pessoa fisica, não foi idenficada a data</i></li>
+			<li>Endereço (Logradoudo) inválido - <i>Obrigatório informar o logradouro</i></li>
+			<li>Bairro inválido! - <i>Obrigado identificar o bairro</i></li>
+			<li>Estado (UF) inválido - <i>Obrigado informar o Estado ou o informado é inválido</i></li>
+			<li>CEP não informado - <i>Obrigatório conter o CEP</i></li>
+			<li>CEP não aceito - <i>Obrigatório conter um CEP aceito pela plataforma para o Parceiro</i></li>
+			<li>Cidade do CEP não aceita - <i>A cidade equivalente do CEP informado, não é licenciado para o parceiro</i></li>
+			<li>Telefone 1 inválido - <i>O telefone 1 informado contem formato inválido</i></li>
+			<li>Telefone 2 inválido - <i>O telefone 2 informado contem formato inválido</i></li>
+			<li>E-mail não informado ou inválido - <i>Obrigatório conter um e-mail válido</i></li>
+			<li>E-mail já esta em uso no registro da linha XX - <i>E-email já foi informado em outro registro do seu arquivo</i></li>
+			<li>E-mail já pertence a um contrato ativo de outro cliente seu - <i>E-mail já está em uso/ativo em outro contrato dos seus clientes</i></li>
+			<li>E-mail já pertence a um contrato ativo - <i>E-mail já está em uso/ativo em outro contrato externo</i></li>
+		</ul>			
+			
+			
+		
+	</div>
+</div>

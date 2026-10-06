@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<MODAUTO>
+    <UAGENT>7COMm - EDIModAuto</UAGENT>
+    <VERSAO>3.3</VERSAO>
+    <IDIOMA>pt_BR</IDIOMA>
+    <URL>https://edi7.itau.com.br/cgi-bin/Edi7CGI</URL>
+    <IP_PUSHLET>edi7.itau.com.br</IP_PUSHLET>
+    <PORTA_PUSHLET>80</PORTA_PUSHLET>
+    <CLIENTES>
+        <entry>
+            <key>7COMMKEY</key>
+            <value>
+                <CLIENTE>7COMMCLIENTE</CLIENTE>
+                <TIPO>7COMMTIPO</TIPO>
+                <SENHA>7COMMSENHA</SENHA>
+                <PRODUTO>7COMMPRODUTO</PRODUTO>
+                <PROXYSERVIDOR>7COMMPROXYSERVIDOR</PROXYSERVIDOR>
+                <PROXYPORTA>7COMMPROXYPORTA</PROXYPORTA>
+                <PROXYUSUARIO>7COMMPROXYUSUARIO</PROXYUSUARIO>
+                <PROXYSENHA>7COMMPROXYSENHA</PROXYSENHA>
+                <TENTATIVASLOGIN>5</TENTATIVASLOGIN>
+                <PARAMETROS>
+                    <GERAL>
+                        <MODO_PERSISTENTE>false</MODO_PERSISTENTE>
+                        <MODO_TRABALHO>A</MODO_TRABALHO>
+                        <INTERVALO_PESQ>180</INTERVALO_PESQ>
+                    </GERAL>
+                    <UPLOAD>
+                        <UPLOAD_DIR_ENVIADOS>7COMMDIRENVIADOS</UPLOAD_DIR_ENVIADOS>
+                    </UPLOAD>
+                    <DOWNLOAD>
+                        <DOWNLOADFILTER_OPER>7COMMOPERACAO</DOWNLOADFILTER_OPER>
+                        <DOWNLOADFILTER_MODO>7COMMMODO</DOWNLOADFILTER_MODO>
+                        <DOWNLOADFILTER_XP>7COMMESPECIAL</DOWNLOADFILTER_XP>
+                        <DOWNLOADDIR>7COMMDIRDOWNLOAD</DOWNLOADDIR>
+                    </DOWNLOAD>
+                    <LISTA_UPLOAD>
+                        <LISTA>
+                            <OBJETO>
+                                <ARQUIVO>7COMMDIRUPLOAD</ARQUIVO>
+                            </OBJETO>
+                        </LISTA>
+                    </LISTA_UPLOAD>
+                </PARAMETROS>
+            </value>
+        </entry>
+    </CLIENTES>
+</MODAUTO>

@@ -1,0 +1,13 @@
+{
+  "retorno_status": true,
+  "modelos": [
+    {
+      "id": "999",
+      "nome": "Modelo A"
+    },
+    {
+      "id": "999",
+      "nome": "Modelo B"
+    }
+  ]
+}

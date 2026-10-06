@@ -1,0 +1,102 @@
+<div class="accordion" id="accordion{nmurl}">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse{nmurl}" aria-expanded="true" aria-controls="collapse{nmurl}">
+          {titulo}
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapse{nmurl}" class="collapse" aria-labelledby="headingOne">
+      <div class="card-body">
+        <div class="row">
+        	<div class="col-12 col-lg-5 col-xl-6">
+            
+        <p><strong>URL: {apihost}/{url}{urlget}</strong></p>
+        {parametroget}
+        <p class="tituloparametro">parâmetos via POST	</p>
+        <ul>
+          <li>keyapi: <strong>string</strong> - <em>contendo a chave de acesso pra validar o acesso (Obrigatório)</em></li>
+          <li>login: <strong>string</strong> - <em>login do usuário (Obrigatório)</em></li>
+          <li>pass: <strong>string</strong> - <em>senha do usuário (Obrigatório)</em></li>
+          {infposts}
+        </ul>
+        {obs}
+        <p>&nbsp;</p>
+        	</div>
+            <div class="col-12 col-lg-7 col-xl-6 codigo">
+				
+				<ul class="nav nav-tabs" id="myTab{nmurl}" role="tablist">
+  					<li class="nav-item">
+    					<a class="nav-link active" id="{nmurl}code-tab" data-toggle="tab" href="#{nmurl}code" role="tab" aria-controls="{nmurl}code" aria-selected="true">Exemplo de retorno:</a>
+  					</li>
+  					<li class="nav-item">
+    					<a class="nav-link" id="{nmurl}profile-tab" data-toggle="tab" href="#{nmurl}profile" role="tab" aria-controls="{nmurl}profile" aria-selected="false">Simulação</a>
+  					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent{url}" >
+  					<div class="tab-pane fade show active" id="{nmurl}code" role="tabpanel" aria-labelledby="{nmurl}code-tab">
+						<pre><code>{examplecode}</code></pre>
+  					</div>
+					<div class="tab-pane fade pt-2" id="{nmurl}profile" role="tabpanel" aria-labelledby="{nmurl}profile-tab">
+						
+						<div class="input-group mb-3">
+  							<div class="input-group-prepend">
+    							<span class="input-group-text" id="basic-addon1">{apihost}/{url}{isget}</span>
+  							</div>
+  							{fieldget}
+						</div>
+						
+						
+						<hr>
+						
+						<form name="simule{nmurl}" id="simule{nmurl}" method="POST" data-destino="{nmurl}" action="{url}">
+							
+							<div class="form-group row">
+								<label for="keyapi" class="col-sm-3 col-form-label col-form-label-sm">keyapi</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" id="keyapi" name="keyapi" value="{keyapi}" placeholder="Chave da API">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="login" class="col-sm-3 col-form-label col-form-label-sm">login</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" id="login" name="login" value="{login}" placeholder="Login">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="senha" class="col-sm-3 col-form-label col-form-label-sm">pass</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" id="pass" name="pass" value="{pass}" placeholder="Senha">
+								</div>
+							</div>
+							
+							{fieldpost}
+							
+							<div class="form-group row">
+								<p class="text-right"><button type="button" onclick="chamaSimula('simule{nmurl}')" >Enviar</button></p>
+							</div>
+							
+							<div id="return{nmurl}" class="codigo">
+								
+							</div>
+  							
+  							
+  							
+						</form>
+					</div>
+				</div>
+				
+				
+				
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

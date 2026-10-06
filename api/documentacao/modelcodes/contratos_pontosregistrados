@@ -1,0 +1,11 @@
+{
+  "retorno_status": true,
+  "pontos": [
+    {
+      "marca": "Android",
+      "modelo": "XXXXXX",
+      "mac": "XXXXXXXXXXXX",
+      "status": "online"
+    }
+  ]
+}

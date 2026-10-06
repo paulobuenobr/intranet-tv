@@ -1,0 +1,9 @@
+<e:ConsultarLoteRps>
+    <e:ConsultarLoteRpsEnvio>
+        <e:Prestador>
+            <e:Cnpj>[cnpj]</e:Cnpj>
+            <e:InscricaoMunicipal>[inscricaoMunicipal]</e:InscricaoMunicipal>
+        </e:Prestador>
+        <e:Protocolo>[protocolo]</e:Protocolo>
+    </e:ConsultarLoteRpsEnvio>
+</e:ConsultarLoteRps>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nfse>
+    <nf>
+        <numero_nfse>306</numero_nfse>
+        <serie_nfse>1</serie_nfse>
+        <data_nfse>02/10/2023</data_nfse>
+        <data_fato>02/10/2023</data_fato>
+        <hora_nfse>11:26:37</hora_nfse>
+        <situacao_codigo_nfse>1</situacao_codigo_nfse>
+        <situacao_descricao_nfse>Emitida</situacao_descricao_nfse>
+        <link_nfse>https://saojose.atende.net/autoatendimento/servicos/consulta-de-autenticidade-de-nota-fiscal-eletronica-nfse/detalhar/1/identificador/8327738794200851969220241002102023418638</link_nfse>
+        <cod_verificador_autenticidade>8327738794200851969220241002102023418638</cod_verificador_autenticidade>
+        <valor_total>550,00</valor_total>
+        <valor_desconto>0,00</valor_desconto>
+        <valor_ir>0,00</valor_ir>
+        <valor_inss>0,00</valor_inss>
+        <valor_contribuicao_social>0,00</valor_contribuicao_social>
+        <valor_rps>0,00</valor_rps>
+        <valor_pis>0,00</valor_pis>
+        <valor_cofins>0,00</valor_cofins>
+        <observacao>0</observacao>
+    </nf>
+    <prestador>
+        <cpfcnpj>08519692000190</cpfcnpj>
+        <cidade>8327</cidade>
+    </prestador>
+    <tomador>
+        <tipo>J</tipo>
+        <cpfcnpj>26373643000174</cpfcnpj>
+        <ie></ie>
+        <sobrenome_nome_fantasia>0</sobrenome_nome_fantasia>
+        <nome_razao_social>FORMULA 5 AUTOMOTIVO LTDA</nome_razao_social>
+        <numero_residencia>0</numero_residencia>
+        <complemento>0</complemento>
+        <ponto_referencia>0</ponto_referencia>
+        <estado>SC</estado>
+        <cidade>8327</cidade>
+        <logradouro>ORLANDO ODILIO KOERICH</logradouro>
+        <bairro>PICADAS DO SUL</bairro>
+        <cep>88106102</cep>
+        <ddd_fone_residencial>0</ddd_fone_residencial>
+        <ddd_fone_comercial>0</ddd_fone_comercial>
+        <fone_residencial></fone_residencial>
+        <fone_comercial>0</fone_comercial>
+        <ddd_fax>0</ddd_fax>
+        <fone_fax>0</fone_fax>
+        <email>EMAIL@NAOINFORMADO.COM</email>
+    </tomador>
+    <itens>
+        <lista>
+            <codigo_local_prestacao_servico>8327</codigo_local_prestacao_servico>
+            <codigo_item_lista_servico>1402</codigo_item_lista_servico>
+            <descritivo>(MANUTENÇÃO DE SERVIDOR E REDE WI-FI) EM 1X DE R$ 550,00 ref à DEZEMBRO/2023.</descritivo>
+            <aliquota_item_lista_servico>2,0000</aliquota_item_lista_servico>
+            <situacao_tributaria>0</situacao_tributaria>
+            <valor_tributavel>550,00</valor_tributavel>
+            <valor_deducao>0,00</valor_deducao>
+            <valor_issrf>0,00</valor_issrf>
+            <valor_desconto_incondicional>0,00</valor_desconto_incondicional>
+            <tributa_municipio_prestador>S</tributa_municipio_prestador>
+        </lista>
+    </itens>
+</nfse>

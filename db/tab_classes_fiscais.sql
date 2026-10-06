@@ -1,0 +1,56 @@
+INSERT INTO tab_classes_fiscais (clf_id, clf_taxa, pla_id, pls_id, afc_id, cft_id) VALUES
+(1, 100.00, 729, NULL, NULL, 1),
+(2, 100.00, 730, NULL, NULL, 2),
+(3, 100.00, 731, NULL, NULL, 3),
+(4, 100.00, 732, NULL, NULL, 4),
+(5, 100.00, 734, NULL, NULL, 5),
+(6, 100.00, 733, NULL, NULL, 6),
+(7, 100.00, 735, NULL, NULL, 7),
+(8, 100.00, NULL, NULL, 27, 8),
+(9, 100.00, NULL, NULL, 10, 9),
+(10, 100.00, 749, NULL, NULL, 1),
+(11, 100.00, 748, NULL, NULL, 11),
+(12, 100.00, 752, NULL, NULL, 1),
+(13, 100.00, 751, NULL, NULL, 12),
+(14, 100.00, 753, NULL, NULL, 12),
+(15, 100.00, 752, NULL, NULL, 1),
+(16, 100.00, 756, NULL, NULL, 2),
+(17, 100.00, 757, NULL, NULL, 4),
+(19, 100.00, 765, NULL, NULL, 13),
+(20, 100.00, 766, NULL, NULL, 14),
+(21, 100.00, 764, NULL, NULL, 15),
+(21, 100.00, 764, NULL, NULL, 15),
+(22, 100.00, 763, NULL, NULL, 4),
+(23, 100.00, 736, NULL, NULL, 16);
+
+
+INSERT INTO tab_classes_fiscais (clf_id, clf_taxa, pla_id, pls_id, afc_id, cft_id) VALUES
+(1, 100.00, 729, NULL, NULL, 1),
+(2, 100.00, 730, NULL, NULL, 2),
+(3, 100.00, 731, NULL, NULL, 3),
+(4, 100.00, 732, NULL, NULL, 4),
+(6, 100.00, 733, NULL, NULL, 6),
+(7, 100.00, 735, NULL, NULL, 7),
+(12, 100.00, 752, NULL, NULL, 1),
+(15, 100.00, 752, NULL, NULL, 1),
+(17, 100.00, 757, NULL, NULL, 4),
+(19, 100.00, 765, NULL, NULL, 13),
+(20, 100.00, 766, NULL, NULL, 14),
+(22, 100.00, 763, NULL, NULL, 4);
+
+
+INSERT INTO tab_classes_fiscais (clf_id, clf_taxa, pla_id, pls_id, afc_id, cft_id) VALUES
+(1, 100.00, 729, NULL, NULL, 1),
+(2, 100.00, 730, NULL, NULL, 2),
+(3, 100.00, 731, NULL, NULL, 3),
+(4, 100.00, 732, NULL, NULL, 4),
+(6, 100.00, 733, NULL, NULL, 6),
+(7, 100.00, 735, NULL, NULL, 7),
+(12, 100.00, 752, NULL, NULL, 1),
+(13, 100.00, 751, NULL, NULL, 12),
+(14, 100.00, 753, NULL, NULL, 12),
+(15, 100.00, 752, NULL, NULL, 1),
+(17, 100.00, 757, NULL, NULL, 4),
+(19, 100.00, 765, NULL, NULL, 13),
+(20, 100.00, 766, NULL, NULL, 14),
+(22, 100.00, 763, NULL, NULL, 4);

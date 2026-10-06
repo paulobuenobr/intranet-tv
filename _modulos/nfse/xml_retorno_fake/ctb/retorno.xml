@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <ConsultarNfseResponse xmlns="https://www.e-governeapps2.com.br/">
+            <ConsultarNfseResult>
+                <ListaNfse>
+                    <CompNfse>
+                        <tcCompNfse>
+                            <Nfse>
+                                <InfNfse>
+                                    <Numero>5023</Numero>
+                                    <CodigoVerificacao>2K5DLF0Z</CodigoVerificacao>
+                                    <DataEmissao>2023-09-04T00:00:00</DataEmissao>
+                                    <IdentificacaoRps>
+                                        <Numero>2656</Numero>
+                                        <Serie>UNICA</Serie>
+                                        <Tipo>1</Tipo>
+                                    </IdentificacaoRps>
+                                    <DataEmissaoRps>2023-09-04T00:00:00</DataEmissaoRps>
+                                    <NaturezaOperacao>1</NaturezaOperacao>
+                                    <RegimeEspecialTributacao>0</RegimeEspecialTributacao>
+                                    <OptanteSimplesNacional>1</OptanteSimplesNacional>
+                                    <IncentivadorCultural>2</IncentivadorCultural>
+                                    <Competencia>0001-01-01T00:00:00</Competencia>
+                                    <NfseSubstituida>0</NfseSubstituida>
+                                    <Servico>
+                                        <Valores>
+                                            <ValorServicos>149.50</ValorServicos>
+                                            <NumeroDeducao>0</NumeroDeducao>
+                                            <ValorDeducoes>0.00</ValorDeducoes>
+                                            <ValorPis>0.00</ValorPis>
+                                            <ValorCofins>0.00</ValorCofins>
+                                            <ValorInss>0.00</ValorInss>
+                                            <ValorIr>0.00</ValorIr>
+                                            <ValorCsll>0.00</ValorCsll>
+                                            <IssRetido>2</IssRetido>
+                                            <ValorIss>5.11</ValorIss>
+                                            <ValorIssRetido>0.00</ValorIssRetido>
+                                            <OutrasRetencoes>0.00</OutrasRetencoes>
+                                            <BaseCalculo>149.50</BaseCalculo>
+                                            <Aliquota>0.0342</Aliquota>
+                                            <ValorLiquidoNfse>149.50</ValorLiquidoNfse>
+                                            <DescontoIncondicionado>0.00</DescontoIncondicionado>
+                                            <DescontoCondicionado>0.00</DescontoCondicionado>
+                                        </Valores>
+                                        <ItemListaServico>0107</ItemListaServico>
+                                        <CodigoCnae>951180000</CodigoCnae>
+                                        <CodigoTributacaoMunicipio>118879</CodigoTributacaoMunicipio>
+                                        <Discriminacao>Item.: 1 - Codigo Servico.: 002 - Descricao Servico.: SERVICOS UTILIZACAO DE CANAIS DE CENTRAL TELEFONICA VIRTUAL - Quantidade.: 5 - Valor.: 29,90 |</Discriminacao>
+                                        <CodigoMunicipio>4106902</CodigoMunicipio>
+                                    </Servico>
+                                    <ValorCredito>0</ValorCredito>
+                                    <PrestadorServico>
+                                        <IdentificacaoPrestador>
+                                            <Cnpj>17989371000140</Cnpj>
+                                            <InscricaoMunicipal>010108063136</InscricaoMunicipal>
+                                        </IdentificacaoPrestador>
+                                        <NomeFantasia>JK2 TELECOMUNICACOES LTDA</NomeFantasia>
+                                        <Endereco>
+                                            <Endereco>FRANCISCO ROCHA</Endereco>
+                                            <Numero>198</Numero>
+                                            <Bairro>BATEL</Bairro>
+                                            <CodigoMunicipio>4106902</CodigoMunicipio>
+                                            <Uf>PR</Uf>
+                                            <Cep>80420130</Cep>
+                                        </Endereco>
+                                    </PrestadorServico>
+                                    <TomadorServico>
+                                        <IdentificacaoTomador>
+                                            <CpfCnpj>
+                                                <Cnpj>04853877000186</Cnpj>
+                                            </CpfCnpj>
+                                        </IdentificacaoTomador>
+                                        <RazaoSocial>CONSULADO DE LA REPUBLICA ARGENTINA EN FLORIANOPOLIS</RazaoSocial>
+                                        <Endereco>
+                                            <Endereco>RODOVIA JOSE CARLOS DAUX</Endereco>
+                                            <Numero>5500</Numero>
+                                            <Bairro>SACO GRANDE</Bairro>
+                                            <CodigoMunicipio>4205407</CodigoMunicipio>
+                                            <Uf>SC</Uf>
+                                            <Cep>88032005</Cep>
+                                        </Endereco>
+                                        <Contato>
+                                            <Telefone>00000000000</Telefone>
+                                            <Email>fqq@mrecic.gov.ar</Email>
+                                        </Contato>
+                                    </TomadorServico>
+                                </InfNfse>
+                            </Nfse>
+                        </tcCompNfse>
+                    </CompNfse>
+                </ListaNfse>
+                <ListaMensagemRetorno />
+            </ConsultarNfseResult>
+        </ConsultarNfseResponse>
+    </soap:Body>
+</soap:Envelope>

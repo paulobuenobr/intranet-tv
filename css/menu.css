@@ -1,0 +1,54 @@
+.m0table {
+	background: white;
+	border: 1px none #252525;
+}
+.m0mouto {
+	background: #252525;
+}
+.m0moutoTop {
+	background: #252525;
+}
+.m0movero {
+	background: #505050;
+	color: black;
+}
+.m0inner {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 1px;
+	padding-left: 8px;
+	font-weight: bold;
+	color: white;
+}
+.m0innerOver {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+}
+.m0mouto2 {
+	background: #505050;
+}
+.m0movero2 {
+	background: #828282;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 1px;
+	padding-left: 8px;
+	font-weight: bold;
+	color: white;
+}
+.m0inner2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 1px;
+	padding-left: 8px;
+	font-weight: bold;
+	color: white;
+}
+.m0innerOver2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+}

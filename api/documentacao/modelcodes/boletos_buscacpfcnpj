@@ -1,0 +1,72 @@
+{
+  "retorno_status": true,
+  "id_cliente": "99999",
+  "nome": "Cliente A",
+  "cpf_cnpj": "999.999.999-99",
+  "boletos": [
+    {
+      "id": "99",
+      "codigo": "99999999999",
+      "formato": "Boleto Online (SICOOB) [OTT]",
+      "referente": [
+        {
+          "periodo": "mes/ano",
+          "itens": [
+            {
+              "descricao": "Serviço A",
+              "valor": "R$ 99,99"
+            },
+            {
+              "descricao": "Desconto A",
+              "valor": "R$ -9,99"
+            }
+          ]
+        }
+      ],
+      "datas": {
+        "geracao": "dd/mm/aaaa",
+        "vencimento": "dd/mm/aaaa",
+        "pagamento": "dd/mm/aaaa"
+      },
+      "valores": {
+        "bonificacao": "R$ 9,99",
+        "valor": "R$ 99,99"
+      },
+      "nosso_numero": "9999999",
+      "linha_digitavel": "99999.99999 99999.999999 99999.999999 9 99999999999999",
+      "status": "Pago"
+    },
+    {
+      "id": "99",
+      "codigo": "99999999999",
+      "formato": "Boleto Online (SICOOB) [OTT]",
+      "referente": [
+        {
+          "periodo": "Mes/Ano",
+          "itens": [
+            {
+              "descricao": "Plano A",
+              "valor": "R$ 999,99"
+            },
+            {
+              "descricao": "Desconto A",
+              "valor": "R$ -9,99"
+            }
+          ]
+        }
+      ],
+      "datas": {
+        "geracao": "dd/mm/aaaa",
+        "vencimento": "dd/mm/aaaa",
+        "pagamento": null
+      },
+      "valores": {
+        "bonificacao": "R$ 99,99",
+        "valor": "R$ 999,99"
+      },
+      "nosso_numero": "999999999",
+      "linha_digitavel": "99999.99999 99999.999999 99999.999999 9 99999999999999",
+      "status": "Em Aberto"
+    }
+  ]
+}

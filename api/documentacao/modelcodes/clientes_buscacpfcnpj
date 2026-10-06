@@ -1,0 +1,19 @@
+{
+  "retorno_status": true,
+  "lista": [
+    {
+      "id": "9999",
+      "nome": "Cliente 1",
+      "cpf_cnpj": "999.999.999-99",
+      "data_nascimento": "dd/mm/aaaa",
+      "data_cadastro": "dd/mm/aaaa"
+    },
+    {
+      "id": "9999",
+      "nome": "Cliente 2",
+      "cpf_cnpj": "999.999.999-99",
+      "data_nascimento": "dd/mm/aaaa",
+      "data_cadastro": "dd/mm/aaaa"
+    }
+  ]
+}

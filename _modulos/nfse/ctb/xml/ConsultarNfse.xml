@@ -1,0 +1,9 @@
+<e:ConsultarNfse>
+    <e:ConsultarNfseEnvio>
+        <e:Prestador>
+            <e:Cnpj>[cnpj]</e:Cnpj>
+            <e:InscricaoMunicipal>[inscricaoMunicipal]</e:InscricaoMunicipal>
+        </e:Prestador>
+        <e:NumeroNfse>[numeroNfse]</e:NumeroNfse>
+    </e:ConsultarNfseEnvio>
+</e:ConsultarNfse>

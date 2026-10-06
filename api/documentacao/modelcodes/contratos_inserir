@@ -1,0 +1,30 @@
+{
+  "retorno_status": true,
+  "id": "9999",
+  "codigo": "9999/999999999-99",
+  "tipo": "Principal",
+  "servico": "Olé TV",
+  "data_geracao": "dd/mm/aaaa",
+  "data_ativacao": "dd/mm/aaaa",
+  "status": "Ativo (Sem Pendências)",
+  "assinaturas": [
+    {
+      "id": "9999",
+      "plano": "Plano A",
+      "box": "99",
+      "dispositivos": "99",
+      "status_assinatura": "Ativo",
+      "equipamentos": [
+        {
+          "id": "9999",
+          "equipamento": "Nome Equipamento",
+          "equipamento_modelo": "Modelo do Equipamento",
+          "mac": "código MAC",
+          "data_inicio": "dd/mm/aaaa",
+          "data_termino": null,
+          "status_equipamento": "Ativo"
+        }
+      ]
+    }
+  ]
+}

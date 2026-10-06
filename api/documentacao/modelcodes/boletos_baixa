@@ -1,0 +1,17 @@
+{
+  "retorno_status": true,
+  "id_boleto": 9999,
+  "data_vencimento": "dd/mm/aaaa",
+  "valor_original": "999,99",
+  "pagamento": {
+    "data": "dd/mm/aaaa",
+    "valores": {
+      "bonificacao": "9,99",
+      "juros": "9,99",
+      "acrescimo": "9,99",
+      "total": "999,99",
+      "pago": "999,99"
+    },
+    "status": "Situacao atual da baixa"
+  }
+}

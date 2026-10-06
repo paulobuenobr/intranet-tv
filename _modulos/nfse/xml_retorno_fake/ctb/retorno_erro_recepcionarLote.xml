@@ -1,0 +1,17 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <RecepcionarLoteRpsResponse xmlns="https://www.e-governeapps2.com.br/">
+         <RecepcionarLoteRpsResult>
+            <NumeroLote xsi:nil="true"/>
+            <DataRecebimento xsi:nil="true"/>
+            <ListaMensagemRetorno>
+               <MensagemRetorno>
+                  <Codigo>E514</Codigo>
+                  <Mensagem>O lote nº 10169 já foi recebido anteriormente.</Mensagem>
+                  <Correcao>Informe outro número para o lote e retransmita.</Correcao>
+               </MensagemRetorno>
+            </ListaMensagemRetorno>
+         </RecepcionarLoteRpsResult>
+      </RecepcionarLoteRpsResponse>
+   </soap:Body>
+</soap:Envelope>
